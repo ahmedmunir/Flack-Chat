@@ -1,0 +1,292 @@
+html,
+body {
+    margin: 0;
+    height: 92%;
+    font-family: Helvetica ;
+}
+
+/* Styling background */
+body {
+
+    background-color: #E7FFEE;
+}
+
+.login_user {
+    text-align: center;
+    color: grey;
+    width: fit-content;
+    padding: 20px;
+    margin: auto auto;
+}
+
+/* Styling channels-People side-bar */
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.channels-people {
+    padding: 30px;
+}
+
+.channels,
+.people-online,
+.create-room {
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    outline: none;
+}
+
+.chat-header {
+    color: grey;
+    border-bottom: 0.5px solid rgb(150, 148, 148);
+    padding-bottom: 5px;
+}
+
+.new__room__field {
+    padding: 10px;
+    display: block;
+    width: 93%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px grey;
+    outline: none;
+}
+
+.newchannelError_text {
+    padding: 10px;
+    color: red;
+    border: 1px rgb(253, 206, 201);
+    border-radius: 10px;
+    background-color: rgb(253, 206, 201);
+    display: none;
+}
+ul {
+    padding: 0;
+}
+.list_style {
+    list-style: none;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.style-selected-room {
+    background-color: #4BCF70;
+}
+
+/* Styling chat area */
+.chat {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 83% 10% auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.message-text,
+.send-message {
+    visibility: hidden;
+}
+
+.message-text {
+    resize: none;
+    outline: none;
+    background-color: #F2F3F5;
+    border: #F5FBFD solid 1px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-size: -moz- 1.2rem;
+    margin-top: 15px;
+}
+
+.send-message {
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #4BCF70;
+    color: rgb(32, 32, 32);
+    outline: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.sendButton__text_hide {
+    visibility: visible;
+}
+
+.messages {
+    height: 590px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.join_room_person {
+    text-align: center;
+}
+
+.whole-message-box-owner {
+    max-width: 80%;
+}
+
+.message-container {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.message-container p {
+    width: 100%;
+    overflow-wrap: break-word;
+
+}
+
+.message-container-userColor {
+    background-color: #4BCF70;
+}
+
+.message-container-strangeColor {
+    background-color: #a5a8ad;
+}
+
+.message-username {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.time-style {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: grey;
+    margin-top: 5px;
+}
+
+.whole-message-box-owner {
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.whole-message-box-strange {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-left: auto;
+}
+
+/* Styling private message */
+.private_message {
+    position: fixed;
+    width: 50%;
+    top: 30%;
+    left: 30%;
+    padding: 10px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 10px;
+    display: none;
+    background-color: #4BCF70;
+    color: rgb(32, 32, 32);
+}
+
+.reply_private_message {
+    resize: none;
+    display: block;
+    width: 98%;
+    font-family: cursive;
+    font-size: 1.1rem;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.private_message_reply,
+.private_message_ignore {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    outline: none;
+}
+
+.black-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0, 0.5);
+    display: none;
+}
+
+/* Styling Alert message Box */
+.receive-message-alert {
+    display: none;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid black 0.5px;
+    position: fixed;
+    top: 10px;
+    left: 2%;
+    background-color:#4BCF70;
+}
+
+.alert-text {
+    text-align: center;
+}
+
+.alert-open,
+.alert-ignore {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    outline: none;
+}
+
+/* Responsive some elements */
+@media(max-width: 620px) {
+    .channels {
+        margin-bottom: 10px;
+    }
+}
+
+/* CLASSES that will be added by JS  */
+
+.button-color {
+    background-color: #4BCF70;
+    border:0.2px solid #4BCF70;
+    color: black;
+}
+
+.disable__roomButton {
+    display: none;
+}
+
+.display_createChannelButton_Error {
+    display: block;
+}
+
+.display_private_message {
+    display: block;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/chat.css')}}">
+    <title>chat</title>
+</head>
+<body>
+    <div class='receive-message-alert'>
+        <p class='alert-text'>You have A new message!</p>
+        <button class='alert-open'>Open message</button>
+        <button class='alert-ignore'>Ignore message</button>
+    </div>
+    <div class='black-background'></div>
+    <h3 class="login_user"></h3>
+    <div class='grid-container'>
+        <div class='channels-people'>
+            <div class='buttons-surfing'>
+                <button class='channels'>Channels</button>
+                <button class='people-online'>People</button>
+            </div>
+            <p class='chat-header'>Chat</p>
+            <ul class="results"></ul>
+            <div class='create__room_container'>
+                <input type="text" placeholder="Enter unique name to create new Channel" class="new__room__field disable__roomButton">
+                <button class='create-room button-color disable__roomButton' >create new channel</button>
+                <p class='newchannelError_text'></p>
+            </div>
+            
+        </div>
+        <div class='chat'>
+            <div class="messages"></div>
+            <textarea class="message-text"></textarea>
+            <button class="send-message">Send message</button>
+        </div>
+        <div class='private_message'>
+            <p class="private_message_header"></p>
+            <p class="private_message_text"></p>
+            <textarea class='reply_private_message'></textarea>
+            <button class='private_message_reply'></button>
+            <button class='private_message_ignore'></button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="{{url_for('static', filename='dist/bundle.js')}}"></script>
+</body>
+</html>

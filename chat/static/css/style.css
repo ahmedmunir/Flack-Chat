@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4BCF70;
+    font-family: "Verdana";
+    color: white;
+}
+
+.error-flash {
+    width: 70%;
+    background-color: rgb(236, 152, 152);
+    color: white;
+    border: 1px solid rgb(236, 152, 152);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app-username-container {
+    text-align: center;
+    padding-top: 20%;
+}
+
+.username-input,
+.username-add-button {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 10px;
+    border: rgb(230, 229, 229) 1px solid;
+    box-shadow: 1px 1px 3px 3px rgb(230, 229, 229);
+    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+.username-add-button {
+    margin-top: 20px;
+    background-color: #4BCF70;
+    color: white;
+
+}
+
+.username-add-button:hover {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}

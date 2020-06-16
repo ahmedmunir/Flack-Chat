@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Flack APP</title>
+</head>
+<body>
+    <div class="app-username-container">
+        {% with message = get_flashed_messages() %}
+            {% if message %}
+                <p class='error-flash'>{{message[0]}}</p>
+            {% endif %}
+        {% endwith %}
+        <h1 class="app-header">Welcome To FLACK Chat platform</h1>
+        <input type="text" placeholder="Enter unique username" class='username-input'>
+        <p class="error-message"></p>
+        <button type="submit" class="username-add-button" disabled>JOIN</button>
+    </div>
+    <script src="{{url_for('static', filename='dist/script.js')}}"></script>
+</body>
+</html>
