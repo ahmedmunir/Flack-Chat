@@ -1,4 +1,5 @@
 # CS50 Web programming with Python and Javascript (Project 2):
+# Real time Chat application using Flask.
 
 # Flack Chat
 After i finished this app with full functionallity according to requirments, i found that my code is too messy, and it was taking too much time to debug small problem at front-end or back-end.
