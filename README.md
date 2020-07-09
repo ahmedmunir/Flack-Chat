@@ -6,7 +6,7 @@ After i finished this app with full functionallity according to requirments, i f
 so i read about refactoring code and design patterns; and now my code is separated into 2 sections:
 
 # Demo:
-![Alt Text](https://gfycat.com/impassionedboilingindianspinyloach)
+![Alt Text](https://media.giphy.com/media/Qu73SOGNSOAWscndna/giphy.gif)
 
 ## Front-End Section:
 My app consists of 2 pages:
