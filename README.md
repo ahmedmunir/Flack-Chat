@@ -1,6 +1,11 @@
+# CS50 Web programming with Python and Javascript (Project 2):
+
 # Flack Chat
 After i finished this app with full functionallity according to requirments, i found that my code is too messy, and it was taking too much time to debug small problem at front-end or back-end.
 so i read about refactoring code and design patterns; and now my code is separated into 2 sections:
+
+# Demo:
+![Alt Text](https://media.giphy.com/media/eJAEFwvHnH6TTCyNp1/giphy.gif)
 
 ## Front-End Section:
 My app consists of 2 pages:
