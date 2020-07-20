@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
 
                 //redirect to chat page
-                url = 'http://127.0.0.1:5000/chat';
+                url = `${location.protocol}//${location.hostname}:${location.port}/chat`;
                 window.location = url
             }
         })
