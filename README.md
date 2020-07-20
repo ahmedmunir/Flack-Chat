@@ -2,6 +2,7 @@
 This is the second project of course [CS50's web programming using python and Javascript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)- 2018.  
 It is real time application which supports chatting inside private rooms and sending private messages to other users.    
 Each User must login using Unique username.  
+The project depends on [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/) at server side & [SocketIO JS library](https://socket.io/) at client side. 
 
 # Demo:
 ![Alt Text](https://media.giphy.com/media/Qu73SOGNSOAWscndna/giphy.gif)
@@ -55,6 +56,9 @@ python application.py
 if you are going to upload it to web server, you need to follow [DOCS](https://flask-socketio.readthedocs.io/en/latest/) of **Flask-SocketIO** according to server you are going to use.  
 My app uses **gunicorn** web server which is required by **heroku** platform.
 
-#Website Link:
+# Important Note:
+Try not to run application on Mozila Firefox, because there is problem with headers that sent from socketIO to serverside which Mozila consider it as deprecated.
+
+# Website Link:
 Enjoy Chatting:  
 https://flackchat-app.herokuapp.com/
