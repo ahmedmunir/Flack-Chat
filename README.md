@@ -1,5 +1,5 @@
 # Flack Chat:Real time Chat application using Flask.
-This is the second project of course [CS50's web programming using python and Javascript](CS50's Web Programming with Python and JavaScript)- 2018.  
+This is the second project of course [CS50's web programming using python and Javascript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript)- 2018.  
 It is real time application which supports chatting inside private rooms and sending private messages to other users.    
 Each User must login using Unique username.  
 
