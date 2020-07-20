@@ -3,7 +3,7 @@ from flask_socketio import SocketIO
 
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "SECRET Value"
+app.config["SECRET_KEY"] = "mZq4t7w!ShVmYq3tbPeSgVkYG-KaPdSg%C*F-JaN"
 app.config["SESSION_TYPE"] = "filesystem"
 
 # data structure to store all usernames
