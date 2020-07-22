@@ -57,7 +57,7 @@ if you are going to upload it to web server, you need to follow [DOCS](https://f
 My app uses **gunicorn** web server which is required by **heroku** platform.
 
 # Important Note:
-Try not to run application on Mozila Firefox, because there is problem with headers that sent from socketIO to serverside which Mozila consider it as deprecated.
+Try not to run application on **Mozila Firefox**, because there is problem with headers that sent from socketIO to serverside which Mozila consider it as deprecated.
 
 # Website Link:
 Enjoy Chatting:  
