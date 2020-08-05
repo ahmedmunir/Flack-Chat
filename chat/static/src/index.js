@@ -47,7 +47,7 @@ socket.on('connect', (data) => {
     and preventing from display the user (which already logged in) inside people list*/
     if(data) {
         document.querySelector('.login_user').innerHTML = `Welcome ${data['username']}, Enjoy Chatting with our Flack Chat App. <br/>
-                                                            You can create new room, chat inside any room you select and send private message to any online user`;
+                                                            You can create new channel, chat inside any channel you select and send private message to any online user`;
         username_client = data['username'];
         state.current_chatting['connector'] = data['room'];
         console.log(data)
