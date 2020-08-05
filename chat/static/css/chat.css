@@ -19,6 +19,10 @@ body {
     margin: auto auto;
 }
 
+.login_user p{
+    margin: 0;
+}
+
 /* Styling channels-People side-bar */
 
 .grid-container {
