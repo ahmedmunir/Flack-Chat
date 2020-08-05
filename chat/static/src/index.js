@@ -46,7 +46,8 @@ socket.on('connect', (data) => {
     /*update the username variable that will responsible of declaring the username at top of code
     and preventing from display the user (which already logged in) inside people list*/
     if(data) {
-        document.querySelector('.login_user').textContent = `Welcome ${data['username']}, Enjoy Chatting with our Flack Chat App`;
+        document.querySelector('.login_user').textContent = `Welcome ${data['username']}, Enjoy Chatting with our Flack Chat App. \n
+                                                            You can create new room, chat inside any room you select and send private message to any online user`;
         username_client = data['username'];
         state.current_chatting['connector'] = data['room'];
         console.log(data)
