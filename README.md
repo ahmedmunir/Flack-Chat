@@ -58,7 +58,3 @@ My app uses **gunicorn** web server which is required by **heroku** platform.
 
 # Important Note:
 Try not to run application on **Mozila Firefox**, because there is problem with headers that sent from socketIO to serverside which Mozila consider it as deprecated.
-
-# Website Link:
-Enjoy Chatting:  
-https://flackchat-app.herokuapp.com/
